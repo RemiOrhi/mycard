@@ -1,0 +1,47 @@
+@import url(../vendor/fonts/fonts.css);
+
+body {
+    width: 170px;
+    margin: 0;
+    border: 2px solid rgb(75, 99, 180);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.slava-card {
+    height: 350px;
+    background: url('../images/grey1.jpg');
+    border-radius: 2px;
+}
+
+.my-name {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+}
+
+.line {
+    width: 150px;
+    background-color: lightcoral;
+    margin: 0 auto 10px;
+}
+
+.sites {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.site {
+    border-radius: 5px;
+    background-color: rgb(75, 99, 180);
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+}
+
