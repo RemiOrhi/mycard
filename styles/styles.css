@@ -1,5 +1,14 @@
 @import url(../vendor/fonts/fonts.css);
 
+@keyframes move {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 100px 0;
+    }
+}
+
 body {
     width: 170px;
     margin: 0;
@@ -10,13 +19,16 @@ body {
 
 .slava-card {
     height: 350px;
-    background: url('../images/grey1.jpg');
+    background: url("../images/grey1.jpg");
     border-radius: 2px;
 }
 
 .my-name {
+    font-family: "Frederickathe Great", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     color: white;
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     margin: 0;
 }
@@ -31,17 +43,69 @@ body {
     display: flex;
     flex-direction: column;
     width: 100px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
 }
 
 .site {
     border-radius: 5px;
+    border: 1px solid gray;
     background-color: rgb(75, 99, 180);
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 2px;
 }
 
 .link {
+    width: 100%;
     text-decoration: none;
     color: rgb(224, 224, 224);
+    font-family: "Frederickathe Great", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
 }
 
+.link:hover {
+    opacity: 0.5;
+}
+
+.circle {
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.circle__line {
+    height: 35px;
+}
+
+.circle__line_size_1 {
+    background-image: url('../images/line1.svg');
+    animation: move 5s linear infinite alternate;
+}
+
+.circle__line_size_2 {
+    background-image: url('../images/line2.svg');
+    animation: move 3s linear infinite alternate;
+}
+
+.circle__line_size_3 {
+    background-image: url('../images/line3.svg');
+    animation: move 5s linear infinite alternate;
+}
+
+.circle__line_size_4 {
+    background-image: url('../images/line4.svg');
+    animation: move 8s linear infinite alternate;
+}
+
+.copyright {
+    text-align: center;
+    margin: 0;
+}
